@@ -14,5 +14,12 @@ npm build'''
       }
     }
 
+    stage('Docker ') {
+      steps {
+        sh '''docker build .
+docker push'''
+      }
+    }
+
   }
 }
